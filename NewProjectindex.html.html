@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="stylesss.css" />
+</head>
+<body>
+  <div class="converter-container">
+    <div class="thermometer-icon">🌡️</div>
+    <h1>Temperature Converter</h1>
+
+    <div class="input-group">
+      <label for="temperature">Enter Temperature:</label>
+      <input type="number" id="temperature" placeholder="Enter temperature value" step="any" />
+      <div class="error-message" id="error-message">Please enter a valid number</div>
+    </div>
+
+    <div class="input-group">
+      <label>Convert From:</label>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" id="celsius" name="unit" value="celsius" checked />
+          <label for="celsius">Celsius (°C)</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="fahrenheit" name="unit" value="fahrenheit" />
+          <label for="fahrenheit">Fahrenheit (°F)</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="kelvin" name="unit" value="kelvin" />
+          <label for="kelvin">Kelvin (K)</label>
+        </div>
+      </div>
+    </div>
+
+    <button class="convert-btn" onclick="convertTemperature()">Convert Temperature</button>
+
+    <div class="result-container" id="result-container">
+      <div class="result-text" id="result-text">Enter a temperature and click convert</div>
+    </div>
+
+    <div class="conversion-formula" id="formula-display"></div>
+  </div>
+
+  <script src="scriptt.js"></script>
+</body>
+</html>
